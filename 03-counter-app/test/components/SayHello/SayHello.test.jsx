@@ -22,4 +22,11 @@ describe('<SayHello> component', () => {
     expect(container).toMatchSnapshot()
   })
 
+  it('should have only 1 name', () => {
+    const name = 'Germán'
+    const expectedTitle = 'Hola, Germán!'
+    const { container, getAllByText } = render(<SayHello name={name} />)
+    expect(getAllByText(expectedTitle).length).toBe(1)
+  });
+
 })

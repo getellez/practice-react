@@ -1,10 +1,12 @@
 import { SayHello } from "./components/SayHello/SayHello";
+import { CounterApp } from './components/CounterApp/CounterApp.jsx'
 
 function App() {
   const name = 'Germán'
   return (
     <>
-      <SayHello name={ name } />
+      <CounterApp value={100}/>
+      {/* <SayHello name={ name } /> */}
     </>
   )
 }
