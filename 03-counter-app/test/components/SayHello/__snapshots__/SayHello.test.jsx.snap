@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SayHello> component debe de hacer match con el snapshot 1`] = `
+<div>
+  <h1
+    data-testid="mytestid"
+  >
+    Hola, 
+    Germán
+    !
+  </h1>
+  <h2>
+     
+    Learning React
+     
+  </h2>
+  <small>
+    The most popular frontend library
+  </small>
+</div>
+`;

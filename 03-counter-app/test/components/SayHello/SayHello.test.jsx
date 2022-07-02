@@ -2,13 +2,24 @@ import { render } from '@testing-library/react'
 import { SayHello } from '../../../src/components/SayHello/SayHello.jsx'
 
 describe('<SayHello> component', () => {
+  
+  it('should show the name in a H1', () => {
+    const expectedTitle = 'Hola, Germán!';
+    const name = 'Germán';
+    const { container, getByTestId } = render(<SayHello name={name} />)
+    expect(getByTestId('mytestid').innerHTML).toContain(expectedTitle)
+  });
+  it('should show the title in a H2', () => {
+    const title = 'Learning React';
+    const { container } = render(<SayHello title={title}/>)
+    const h2 = container.querySelector('h2')
+    expect(h2.innerHTML).toContain(title)
+  });
+
   it('debe de hacer match con el snapshot', () => {
     const name = 'Germán'
-    const expectedH1 = 'Hola, Germán!'
-    const { container, getByText } = render(<SayHello name={name} />)
-    const h1 = container.querySelector('h1')
-    
-    expect(getByText(expectedH1)).toBeTruthy()
-    expect(h1.innerHTML).toBe(expectedH1)
+    const { container } = render(<SayHello name={name} />)
+    expect(container).toMatchSnapshot()
   })
+
 })

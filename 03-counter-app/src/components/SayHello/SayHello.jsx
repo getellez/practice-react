@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 export const SayHello = ({ title, subtitle, name }) => {
   return (
     <>
-      <h1>Hola, { name }!</h1>
-      <h2>{ title } </h2>
+      <h1 data-testid="mytestid">Hola, { name }!</h1>
+      <h2> { title } </h2>
       <small>{ subtitle }</small>
     </>
   )
