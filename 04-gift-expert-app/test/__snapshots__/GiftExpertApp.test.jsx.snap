@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GiftExpertApp> Component should match the snapshot 1`] = `
+<div>
+  <h1>
+    GiftExpertApp
+  </h1>
+  <form
+    aria-label="form"
+  >
+    <input
+      autocomplete="off"
+      name="categoryInput"
+      placeholder="Buscar GIFs"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;
+
+exports[`<GiftExpertApp> Component should match th∫e snapshot 1`] = `
+<div>
+  <h1>
+    GiftExpertApp
+  </h1>
+  <form
+    aria-label="form"
+  >
+    <input
+      autocomplete="off"
+      name="categoryInput"
+      placeholder="Buscar GIFs"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GifGrid /> component should match the snapshot when initial state 1`] = `
+<div>
+  <h3>
+     
+    One Punch Man
+     
+  </h3>
+  <small>
+    [Eliminar]
+  </small>
+  <h2>
+    Loading...
+  </h2>
+  <div
+    class="card-grid"
+  />
+</div>
+`;
